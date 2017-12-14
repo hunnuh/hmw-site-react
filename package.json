@@ -1,0 +1,49 @@
+{
+  "name": "gulp.browserify",
+  "version": "1.0.0",
+  "description": "Browserify, Babelify + Watchify + Sourcemaps Example",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run tach\" \"gulp\"",
+    "tach": "npm run build:watch",
+    "mutations": "immutable-css app/css/tach/tachyons.css --strict",
+    "build": "npm run build:css && npm run build:minify",
+    "build:css": "tachyons app/css/tach/tachyons.css > app/css/tachyons.css",
+    "build:minify": "tachyons app/css/tach/tachyons.css -m > app/css/tachyons.min.css",
+    "build:watch": "watch \"npm run build\" app/css/tach/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "animated": "^0.2.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.2.1",
+    "browserify": "^14.4.0",
+    "copy-files": "^0.1.0",
+    "disc": "^1.3.3",
+    "exorcist": "^1.0.0",
+    "gulp": "^3.8.11",
+    "gulp-react": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.3",
+    "immutable-css-cli": "^1.1.1",
+    "normalize.css": "^7.0.0",
+    "pump": "^1.0.2",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.2.1",
+    "tachyons-cli": "^1.0.11",
+    "tachyons-modules": "^1.1.10",
+    "uglifyify": "^4.0.4",
+    "vinyl-source-stream": "^1.0.0",
+    "watch": "^1.0.2",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "browserify-breakdown": "^1.0.4",
+    "prop-types": "^15.6.0",
+    "react-router-transition": "^1.1.2"
+  }
+}
