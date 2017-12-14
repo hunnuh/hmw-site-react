@@ -1,7 +1,7 @@
 {
-  "name": "gulp.browserify",
+  "name": "HUNTERMAVERICKWELLS",
   "version": "1.0.0",
-  "description": "Browserify, Babelify + Watchify + Sourcemaps Example",
+  "description": "Hunter's Portfolio",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "concurrently --kill-others \"npm run tach\" \"gulp\"",
