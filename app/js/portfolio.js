@@ -694,7 +694,7 @@ const images = [
       desc: {
         p:[
           "\u00A0 I made the image browser you are currently using to display my challengingly varied and volumetric portfolio. In addition to the actual contents of this portfolio, I wanted to show off my flourishing React abilities by creating an interactive browser.",
-          "\u00A0 A bulk of the work performed during the process of making this browser was spent processing the numerous digital assets I've made during my career, selecting the best ones, and re-saving them in a compact web-friendly format. One of my main priorities was to keep the overall filesize of these digital assets as small as possible, so that they could all be preloaded. It currently is under 50MB, with almost 200 image assets.",
+          "\u00A0 A portion of the work on this browser was spent processing the numerous digital assets I've made during my career, selecting the best ones, and re-saving them in a compact web-friendly format.",
           "\u00A0 Thank you for viewing my portfolio! I hope you are enjoying your visit as much as I have enjoyed my career thus far.",
         ],
         tech:[

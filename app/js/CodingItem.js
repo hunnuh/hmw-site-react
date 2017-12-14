@@ -7,7 +7,7 @@ class CodingItem extends Component {
   render() {
     let {src, title, desc, date} = this.props;
     let links = desc.tech.map((tech, index)=>
-      <li key={index} className="ba f4 bw1 b--black bg-black-30 br3 dib pa2-ns pv0 ph2 grow pointer mr2 ml0 mv1"><a  href={tech.link} className={`f7 f4-ns link ${tech.color} b no-underline `}>{tech.name}</a></li>
+      <li key={index} className="ba f4 bw1 b--black bg-black-30 br3 dib pa2-ns pv0 ph2 grow pointer mr2 ml0 mv1"><a  target="_blank" href={tech.link} className={`f7 f4-ns link ${tech.color} b no-underline `}>{tech.name}</a></li>
     )
 
     let paras = desc.p.map((p, index)=>
